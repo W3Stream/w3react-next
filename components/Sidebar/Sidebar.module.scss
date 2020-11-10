@@ -1,0 +1,36 @@
+.sidebar {
+  padding: 1rem 0px;
+  color: var(--textColor);
+  background-color: var(--white);
+  z-index: 99;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  width: 240px;
+
+  .sidebarItem {
+    display: flex;
+    align-items: center;
+    padding: 12px 1.5rem;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--grey1Color);
+    }
+    .sidebarItemIcon {
+      font-size: 20px;
+      margin-right: 1.5rem;
+      color: var(--grey4Color);
+      display: flex;
+    }
+  }
+}
+
+// $information-phone: "only screen and (max-width : 414px)";
+// $information-pad: "only screen and (max-width : 1024px) and (min-width: 414px)";
+// @media #{$information-phone} {
+
+// }
+
+// @media #{$information-pad} {
+
+// }

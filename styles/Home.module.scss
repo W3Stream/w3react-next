@@ -1,0 +1,14 @@
+.container {
+  background: var(--grey1Color);
+  font-family: var(--bodyFont);
+  color: var(--textColor);
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+}
