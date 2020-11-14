@@ -5,22 +5,59 @@
   z-index: 99;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   width: 240px;
+  display: flex;
+  flex-direction: column;
 
-  .sidebarItem {
-    display: flex;
-    align-items: center;
-    padding: 12px 1.5rem;
-    font-size: 16px;
-    cursor: pointer;
+  .sidebarMain {
+    flex-grow: 1;
 
-    &:hover {
-      background-color: var(--grey1Color);
-    }
     .sidebarItemIcon {
       font-size: 20px;
       margin-right: 1.5rem;
-      color: var(--grey4Color);
       display: flex;
+    }
+
+    .sidebarItemTop {
+      border-bottom: 1px solid var(--grey1Color);
+      .sidebarChannelItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 1.5rem;
+
+        .channelIcon {
+          height: 136px;
+          width: 136px;
+          border-radius: 50%;
+          border: 1px solid var(--themeColorDark);
+        }
+
+        .sidebarChannelItemTitle {
+          margin: 0;
+          font-weight: 500;
+        }
+
+        .sidebarChannelItemSubtitle {
+          margin: 0;
+          font-weight: 400;
+          color: var(--grey3Color);
+        }
+      }
+    }
+  }
+
+  .sidebarFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .sidebarFooterItem {
+      display: flex;
+      font-size: 20px;
+      color: var(--themeColor);
+      cursor: pointer;
+      &:hover {
+        color: var(--themeColorDark);
+      }
     }
   }
 }
